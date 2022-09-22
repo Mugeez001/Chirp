@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="smooth-scroll">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+  <title>Chirp</title>
+</head>
+<body class="bg-bgYellow">
+    <nav class="container relative mx-auto p-6">
+        <!-- Flex Container For Nav Items -->
+     <div class="flex items-center justify-between space-x-20 my-6">
+      <!-- Logo -->
+      <h3 class="text-softBlue italic font-bold z-30">Chirp.</h3>
+      <!-- Menu Items -->
+      <div class="hidden items-center space-x-10 capitalize text-lightGrey md:flex">
+        <a href="#home" class="tracking-widest hover:text-softBlue">Home</a>
+        <a href="#pricing" class="tracking-widest hover:text-softBlue">Pricing</a>
+        <a href="#faq" class="tracking-widest hover:text-softBlue">FAQ</a>
+
+          <div class="">
+            <a href="#" class="px-8 py-2 text-white bg-softBlue border-1 border-softBlue rounded-md shadow-md hover:text-white hover:bg-darkBlue">
+              <svg width="24" height="20" viewBox="0 0 24 20" fill="none" class="inline-block px-1" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 2.55699C23.117 2.94899 22.168 3.21299 21.172 3.33199C22.189 2.72299 22.97 1.75799 23.337 0.607986C22.386 1.17199 21.332 1.58199 20.21 1.80299C19.313 0.845986 18.032 0.247986 16.616 0.247986C13.437 0.247986 11.101 3.21399 11.819 6.29299C7.728 6.08799 4.1 4.12799 1.671 1.14899C0.381 3.36199 1.002 6.25699 3.194 7.72299C2.388 7.69699 1.628 7.47599 0.965 7.10699C0.911 9.38799 2.546 11.522 4.914 11.997C4.221 12.185 3.462 12.229 2.69 12.081C3.316 14.037 5.134 15.46 7.29 15.5C5.22 17.123 2.612 17.848 0 17.54C2.179 18.937 4.768 19.752 7.548 19.752C16.69 19.752 21.855 12.031 21.543 5.10599C22.505 4.41099 23.34 3.54399 24 2.55699Z" fill="white"/>
+                </svg>
+                Sign in with Twitter
+            </a>
+          </div>
+      </div>
+      <!-- Hamburger Button -->
+      <button id="menu-btn" class="z-30 block md:hidden focus:outline-none hamburger">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+
+      </button>
+     </div>   
+            <!-- Mobile Menu -->
+      <div
+      id="menu"
+      class="fixed inset-0 z-20 hidden flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-bglightBlue"
+    >
+      <div class="w-full py-3 text-center">
+        <a href="#home" class="block hover:text-softBlue">Home</a>
+      </div>
+      <div class="w-full py-3 text-center">
+        <a href="#pricing" class="block hover:text-softBlue">Pricing</a>
+      </div>
+      <div class="w-full py-3 text-center">
+        <a href="#faq" class="block hover:text-softBlue">FAQ</a>
+      </div>
+      <div class="w-full py-3 text-center">
+        <div class="">
+          <a href="#" class="px-8 py-2 text-white bg-softBlue border-1 border-softBlue rounded-md shadow-md hover:text-white hover:bg-darkBlue">
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" class="inline-block px-1" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 2.55699C23.117 2.94899 22.168 3.21299 21.172 3.33199C22.189 2.72299 22.97 1.75799 23.337 0.607986C22.386 1.17199 21.332 1.58199 20.21 1.80299C19.313 0.845986 18.032 0.247986 16.616 0.247986C13.437 0.247986 11.101 3.21399 11.819 6.29299C7.728 6.08799 4.1 4.12799 1.671 1.14899C0.381 3.36199 1.002 6.25699 3.194 7.72299C2.388 7.69699 1.628 7.47599 0.965 7.10699C0.911 9.38799 2.546 11.522 4.914 11.997C4.221 12.185 3.462 12.229 2.69 12.081C3.316 14.037 5.134 15.46 7.29 15.5C5.22 17.123 2.612 17.848 0 17.54C2.179 18.937 4.768 19.752 7.548 19.752C16.69 19.752 21.855 12.031 21.543 5.10599C22.505 4.41099 23.34 3.54399 24 2.55699Z" fill="white"/>
+              </svg>
+              Sign in with Twitter
+          </a>
+        </div>
+      </div>
+    </div>
+    </nav>
+
+    <!--Hero Section -->
+    <section id="hero">
+      <!-- Hero Container -->
+      <div class="container flex flex-col-reverse mx-auto p-6 lg:flex-row">
+      <!-- Content Container -->
+      <div class="flex flex-col space-y-10 mb-44 lg:mt-16  lg:w-1/2 xl:mb-52">
+        <h1 class="text-4xl font-bold text-left lg:text-4xl md:text-5xl md:text-left lg:max-w-md lg:text-left">
+          Twitter analytics taken to a whole new level.
+        </h1>
+        <p class="text-2xl text-left text-lightGrey md:text-left lg:text-xl lg:max-w-md">
+          Chirp is a suite of Twitter analytics that will help you better understand your audience, which tweets they like, and most importantly, whey they are most active on Twitter. 
+        </p>
+        <div class="flex flex-col mx-auto w-full md:flex-row md:space-y-0 md:space-x-3">
+          <a href="#" class="px-8 py-2 text-1xl text-center text-white bg-softBlue border-1 border-softBlue rounded-md shadow-md hover:text-white hover:bg-darkBlue">
+            <svg width="30" height="30" viewBox="0 0 24 20" fill="none" class="inline-block px-1" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 2.55699C23.117 2.94899 22.168 3.21299 21.172 3.33199C22.189 2.72299 22.97 1.75799 23.337 0.607986C22.386 1.17199 21.332 1.58199 20.21 1.80299C19.313 0.845986 18.032 0.247986 16.616 0.247986C13.437 0.247986 11.101 3.21399 11.819 6.29299C7.728 6.08799 4.1 4.12799 1.671 1.14899C0.381 3.36199 1.002 6.25699 3.194 7.72299C2.388 7.69699 1.628 7.47599 0.965 7.10699C0.911 9.38799 2.546 11.522 4.914 11.997C4.221 12.185 3.462 12.229 2.69 12.081C3.316 14.037 5.134 15.46 7.29 15.5C5.22 17.123 2.612 17.848 0 17.54C2.179 18.937 4.768 19.752 7.548 19.752C16.69 19.752 21.855 12.031 21.543 5.10599C22.505 4.41099 23.34 3.54399 24 2.55699Z" fill="white"/>
+              </svg>
+              Sign in with Twitter
+          </a>
+            <a href="#" class="text-darkBlue text-center mt-5 text-xl font-bold md:px-2 md:py-2">Learn more &rarr;</a>
+        </div>
+        <!-- Profile Images -->
+          <div class="flex flex-row-reverse mr-auto -space-x-5 ml-4">
+            <img src="Assets/userAvatar01.svg" alt="" class="h-10 -ml-4 border-1 border-white rounded-full z-[80]">
+            <img src="Assets/userAvatar02.svg" alt="" class="h-10  border-1 border-white   rounded-full  z-[70]">
+            <img src="Assets/userAvatar03.svg" alt="" class="h-10  border-1 border-white   rounded-full  z-[60]">
+            <img src="Assets/userAvatar04.svg" alt="" class="h-10  border-1 border-white   rounded-full z-[50]">
+            <img src="Assets/userAvatar05.svg" alt="" class="h-10 border-1 border-white   rounded-full z-[40]">
+            <img src="Assets/userAvatar06.svg" alt="" class="h-10  border-1 border-white   rounded-full z-[30]">
+            <img src="Assets/userAvatar07.svg" alt="" class="h-10  border-1 border-white   rounded-full z-[20]">
+            <img src="Assets/userAvatar08.svg" alt="" class="h-10  border-1 border-white   rounded-full z-[10]">
+            <img src="Assets/userAvatar09.svg" alt="" class="h-10  border-1 border-white   rounded-full">
+          </div>
+          <p class="font-light text-lightGrey text-left tracking-wide md:text-left">
+            Join <span class="text-darkCyan font-bold">195</span> others who have analyzed their followers and scheduled <span class="text-darkCyan font-bold">1342</span> tweets!
+          </p>
+      </div>
+      <!-- Mobile and Tablet -->
+      <div class="flex-none mb-5 w-full sm:hidden md:block md:w-full lg:hidden">
+        <img src="Assets/Hero Image (Tablet View).png" alt="Hero image">
+    </div>
+    <!-- tablet -->
+    <div class="flex-none mb-7 sm:block sm:w-full md:hidden lg:block lg:w-2/5">
+        <img src="Assets/Hero Image (Desktop View).png" alt="Hero image">
+    </div>
+      </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="bg-white">
+      <!-- Features Container -->
+       <div class="container mx-auto px-6 my-4 py-12">
+        <h1 class="text-black font-bold text-4xl text-left">
+            Features that help you tweet smarter.
+        </h1>
+        <!-- Grid 1 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 justify-items-center">
+          <div class="flex flex-col border-2 border-lightGrey border-opacity-20 rounded-md space-y-4 max-w-xl p-6">
+            <span class=""><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+            </svg></span>
+            <h3 class="font-bold">Analytics
+            </h3>
+            <p class="font-light text-md text-lightGrey">We Constantly Monitor your audience as it grows - so you can tweet when your followers are more likely to be online and ready to engage with your content.</p>
+          </div>
+
+                <!-- Grid 2 -->
+        <div class="flex flex-col border-2 border-lightGrey border-opacity-20 rounded-md space-y-4 max-w-xl p-6">
+          <span><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg></span>
+        <h3 class="font-bold ">Smart Analyser
+        </h3>
+        <p class="font-light text-md text-lightGrey">
+            Chirp automatically recognizes your followers' most active times and automatically sends you notifications if you're missing out on an opportunity.
+        </p>
+        </div>
+          <!-- Grid 3 -->
+        <div class="flex flex-col border-2 border-lightGrey border-opacity-20 rounded-md space-y-4 max-w-xl p-6">
+          <span><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg></span>
+        <h3 class="font-bold ">Scheduled Your Tweets
+        </h3>
+        <p class="font-light text-md text-lightGrey">
+            Quality tweets drive tons of engagement. With Chirp, you can write tweets in advance and schedule them when your audience is most likely to read.
+        </p>
+        </div>
+         <!-- Grid 4 -->
+         <div class="flex flex-col border-2 border-lightGrey border-opacity-20 rounded-md space-y-4 max-w-xl p-6">
+          <span><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+          </svg></span>
+        <h3 class="font-bold ">Dark Mode
+        </h3>
+        <p class="font-light text-md text-lightGrey">
+           Friendly on the eyes, no matter what time you write your Tweets. All colors are chosen to make sure your eyes are at ease at all times.
+        </p>
+        </div>
+        </div>
+       </div>
+    </section>
+
+    <!-- Customers Section -->
+    <section class="bg-bglightBlue overflow-hidden">
+        <div class="container mx-auto px-6 py-12">
+         <h1 class="text-black font-bold text-4xl text-left">
+          What our customers say
+         </h1>
+         <div class="flex flex-col space-y-6 md:flex-row md:space-x-6 justify-between mt-6 items-center">
+          <!-- Flex 1 -->
+          <div class="flex-none flex flex-col space-y-6 bg-white p-6 rounded-md sm:max-w-sm">
+            <div class="flex flex-row space-x-3 items-center">
+              <img class="h-12" src="Assets/userAvatar01.svg" alt="Avatar">
+                 <div class="flex flex-col items-start">
+                 <h3 class="text-sm font-bold">Sara May</h3>
+                 <h4 class="text-xs text-light-gray">@sara_may</h4>
+            </div>
+            <div>
+              <img src="assets/Twitter (Blue).svg" alt="" />
+            </div>
+          </div>
+          <p class="font-light text-md text-lightGrey">
+            I just tried out @chirp and it's amazing, love all the analytics I can see.
+          </p>
+
+          <div class="flex flex-row items-center justify-between">
+            <div class="flex flex-row items-center space-x-1">
+                <img src="Assets/Like.svg" alt="" />
+                <span class="font-light text-sm text-light-gray mx-2">2</span>
+            </div>
+            <span class="font-light text-sm text-light-gray ">March 2, 2021</span>
+        </div>
+       </div>
+
+       <!-- Flex 2 -->
+       <div class="flex-none flex flex-col space-y-6 bg-white p-6 rounded-md sm:max-w-sm">
+        <div class="flex flex-row space-x-3 items-center">
+          <img class="h-12" src="Assets/userAvatar03.svg" alt="Avatar">
+             <div class="flex flex-col items-start">
+             <h3 class="text-sm font-bold">Jack Scott</h3>
+             <h4 class="text-xs text-light-gray">@jackscott_</h4>
+        </div>
+        <div>
+          <img src="assets/Twitter (Blue).svg" alt="" />
+        </div>
+      </div>
+      <p class="font-light text-md text-lightGrey">
+        I initially started using chirp to support the co-founder as I personally knew him, but after having tried it out for a few weeks, I can genuinely say this changed my Twitter game.
+      </p>
+
+      <div class="flex flex-row items-center justify-between">
+        <div class="flex flex-row items-center space-x-1">
+            <img src="Assets/Like.svg" alt="" />
+            <span class="font-light text-sm text-light-gray mx-2">32</span>
+        </div>
+        <span class="font-light text-sm text-light-gray ">March 2, 2021</span>
+    </div>
+   </div>
+
+    <!-- Flex 3 -->
+    <div class="flex-none flex flex-col space-y-6 bg-white p-6 rounded-md md:hidden lg:block sm:max-w-sm">
+      <div class="flex flex-row space-x-3 items-center">
+        <img class="h-12" src="Assets/userAvatar05.svg" alt="Avatar">
+           <div class="flex flex-col items-start">
+           <h3 class="text-sm font-bold">Jessica May</h3>
+           <h4 class="text-xs text-light-gray">@jmay98</h4>
+      </div>
+      <div>
+        <img src="assets/Twitter (Blue).svg" alt="" />
+      </div>
+    </div>
+    <p class="font-light text-md text-lightGrey">
+      Absolutely love everything about Chirp, from the design to how everything works smoothly.
+    </p>
+
+    <div class="flex flex-row items-center justify-between">
+      <div class="flex flex-row items-center space-x-1">
+          <img src="Assets/Like.svg" alt="" />
+          <span class="font-light text-sm text-light-gray mx-2">221</span>
+      </div>
+      <span class="font-light text-sm text-light-gray ">March 2, 2021</span>
+  </div>
+ </div>
+        
+         </div>
+        </div>
+    </section>
+
+    <!-- Price Plan -->
+    <section class="bg-white">
+      <div class="container mx-auto px-6 py-12">
+        <div class="flex flex-col items-center justify-center space-y-4">
+          <h1 class="text-black font-bold text-4xl text-center">One simple price plan</h1>
+        <p class="font-light text-md text-lightGrey text-center">Start growing your twitter account by analyzing your follower's patterns.</p>
+        </div>
+        <div class="flex justify-center items-center mt-8">
+          <div class="bg-bgYellow border-2 border-bGold rounded-md p-8">
+            <div>
+              <h3 class="text-xl font-light text-lightGrey">
+                Monthly
+              </h3>
+              <span class="font-bold text-5xl">
+                $9 <span class="text-base font-light text-lightGrey">/mon</span>
+            </span>
+            </div>
+            <hr class="my-4 font-light opacity-20 text-light-gray">
+            <div class="flex flex-col space-y-4">
+              <div class="flex items-center space-x-3">
+                <img class="h-4"src="Assets/Checkmark.svg" alt="Checkmark">
+                <p class="text-sm font-light text-lightGrey">Unlimited <sup>*</sup> scheduled tweets and threads.</p>
+              </div>
+              <div class="flex items-center space-x-3">
+                <img class="h-4"src="Assets/Checkmark.svg" alt="Checkmark">
+                <p class="text-sm font-light text-lightGrey">scheduled up to three weeks in advance.</p>
+            </div>
+            <div class="flex items-center space-x-3">
+              <img class="h-4"src="Assets/Checkmark.svg" alt="Checkmark">
+              <p class="text-sm font-light text-lightGrey">Realtime analytics practice up to 5k followers .</p>
+          </div>
+           <hr class="my-4 font-light opacity-20 text-light-gray">
+           <div>
+            <button class="px-8  w-full  py-3 bg-softBlue text-white font-bold text-xs rounded-md"><a href="#" class="flex justify-center items-center"><img class="h-4 mr-2" src="Assets/Twitter.svg" alt="Twitter">Sign In With Twitter</a></button>
+           </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-bglightBlue">
+      <div class="container mx-auto px-6 py-4 flex flex-col space-y-3 md:flex-row md:justify-between items-start">
+        <div class="flex items-start">
+          <h3 class="text-softBlue italic font-bold">Chirp.</h3>
+        </div>
+        <div class="flex items-center space-x-4">
+          <img src="Assets/Twitter (Black).svg" alt="" />
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
